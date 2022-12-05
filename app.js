@@ -22,3 +22,9 @@ console.log(document.getElementById('task-title').className);
 // document.querySelector('li').style.color = 'blue';
 // document.querySelector('li:last-child').style.color = 'green'; //Pseudo Classes
 // document.querySelector('li:nth-child(2)').textContent = 'Create Task DOM in Vanilla JavaScript'; 
+
+
+// document.getElementsByClassName
+
+const items = document.getElementsByClassName('list-group-item');
+console.log(items);
