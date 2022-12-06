@@ -48,21 +48,44 @@
 
 
 // Perulangan dengan forEach dan For
-const items = document.querySelectorAll('ul.list-group li.list-group-item');
+// const items = document.querySelectorAll('ul.list-group li.list-group-item');
 
-items.forEach(function(item, index) {
-    item.textContent = `${index} : Hello JavaScript`;
-});
+// items.forEach(function(item, index) {
+//     item.textContent = `${index} : Hello JavaScript`;
+// });
 
-const liOdd = document.querySelectorAll('li:nth-child(odd)');
-const liEven = document.querySelectorAll('li:nth-child(even');
+// const liOdd = document.querySelectorAll('li:nth-child(odd)');
+// const liEven = document.querySelectorAll('li:nth-child(even');
 
-liOdd.forEach(function(li, index) {
-    li.style.background = '#ccc';
-});
+// liOdd.forEach(function(li, index) {
+//     li.style.background = '#ccc';
+// });
 
-for (let i = 0; i < liEven.length; i++){
-    liEven[i].style.background = '#f4f4f4';
-}
+// for (let i = 0; i < liEven.length; i++){
+//     liEven[i].style.background = '#f4f4f4';
+// }
 
-console.log(items);
+// console.log(items);
+
+// Create Element 
+const li = document.createElement('li');
+
+// Add Class
+li.className = 'list-group-item';
+
+// Add ID
+li.id = 'new-item';
+
+// Add Attribute
+li.setAttribute('title', 'New Item');
+
+// Add inner HTML
+li.innerHTML = '<button class="float-right btn btn-danger btn-sm delete-item"><i class="fa fa-trash" aria-hidden="true"></i></button>';
+
+// append text node
+li.appendChild(document.createTextNode ('Hello World'));
+
+// Add Element li ke ul - Append Child
+document.querySelector('ul.list-group').appendChild(li);
+
+console.log(li);
