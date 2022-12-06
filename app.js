@@ -26,5 +26,21 @@ console.log(document.getElementById('task-title').className);
 
 // document.getElementsByClassName
 
-const items = document.getElementsByClassName('list-group-item');
-console.log(items);
+// const items = document.getElementsByClassName('list-group-item');
+// console.log(items);
+// console.log(items[0]);
+// items[0].style.color = 'red';
+// items[2].textContent = 'Hello World';
+
+let lis = document.getElementsByTagName('li');
+console.log(lis);
+console.log(lis[0]);
+
+// Convert HTML to Array
+lis = Array.from(lis);
+
+lis.forEach(function (li, index){
+    li.textContent = `${index} : Hello`;
+});
+
+console.log(lis);
