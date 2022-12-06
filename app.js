@@ -1,8 +1,8 @@
 // Document getElementById
-console.log(document.getElementById('task-title'));
+// console.log(document.getElementById('task-title'));
 
-console.log(document.getElementById('task-title').id);
-console.log(document.getElementById('task-title').className);
+// console.log(document.getElementById('task-title').id);
+// console.log(document.getElementById('task-title').className);
 
 // // Change Syling with JavaScript
 // document.getElementById('task-title').style.background = '#333';
