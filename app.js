@@ -32,15 +32,37 @@
 // items[0].style.color = 'red';
 // items[2].textContent = 'Hello World';
 
-let lis = document.getElementsByTagName('li');
-console.log(lis);
-console.log(lis[0]);
+// let lis = document.getElementsByTagName('li');
+// console.log(lis);
+// console.log(lis[0]);
 
-// Convert HTML to Array
-lis = Array.from(lis);
+// // Convert HTML to Array
+// lis = Array.from(lis);
 
-lis.forEach(function (li, index){
-    li.textContent = `${index} : Hello`;
+// lis.forEach(function (li, index){
+//     li.textContent = `${index} : Hello`;
+// });
+
+// console.log(lis);
+
+
+
+// Perulangan dengan forEach dan For
+const items = document.querySelectorAll('ul.list-group li.list-group-item');
+
+items.forEach(function(item, index) {
+    item.textContent = `${index} : Hello JavaScript`;
 });
 
-console.log(lis);
+const liOdd = document.querySelectorAll('li:nth-child(odd)');
+const liEven = document.querySelectorAll('li:nth-child(even');
+
+liOdd.forEach(function(li, index) {
+    li.style.background = '#ccc';
+});
+
+for (let i = 0; i < liEven.length; i++){
+    liEven[i].style.background = '#f4f4f4';
+}
+
+console.log(items);
