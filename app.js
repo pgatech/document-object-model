@@ -67,25 +67,27 @@
 
 // console.log(items);
 
-// Create Element 
-const li = document.createElement('li');
+// // Create Element 
+// const li = document.createElement('li');
 
-// Add Class
-li.className = 'list-group-item';
+// // Add Class
+// li.className = 'list-group-item';
 
-// Add ID
-li.id = 'new-item';
+// // Add ID
+// li.id = 'new-item';
 
-// Add Attribute
-li.setAttribute('title', 'New Item');
+// // Add Attribute
+// li.setAttribute('title', 'New Item');
 
-// Add inner HTML
-li.innerHTML = '<button class="float-right btn btn-danger btn-sm delete-item"><i class="fa fa-trash" aria-hidden="true"></i></button>';
+// // Add inner HTML
+// li.innerHTML = '<button class="float-right btn btn-danger btn-sm delete-item"><i class="fa fa-trash" aria-hidden="true"></i></button>';
 
-// append text node
-li.appendChild(document.createTextNode ('Hello World'));
+// // append text node
+// li.appendChild(document.createTextNode ('Hello World')); 
 
-// Add Element li ke ul - Append Child
-document.querySelector('ul.list-group').appendChild(li);
+// // Add Element li ke ul - Append Child
+// document.querySelector('ul.list-group').appendChild(li);
 
-console.log(li);
+// console.log(li);
+
+const newHeading = document.createElement('h3');
